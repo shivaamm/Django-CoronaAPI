@@ -13,14 +13,14 @@
     }
 </style>
 
-<body style="background-color: black">
-    <h1 style="color: white;text-align: center;"><span style="color: red">COVID-19</span> WORLDWIDE DATA</h1>
+<body style="background-color: #382828">
+    <h1 style="color: white;text-align: center;margin-top: 1rem;"><span style="color: red">COVID-19</span> WORLDWIDE DATA</h1>
 	
   
 
     
     
-     <form style="margin-top: 100px;margin-bottom: 50px" method="post" class="d-flex justify-content-center align-items-center" action="">
+     <form style="margin-top: 70px;margin-bottom: 50px" method="post" class="d-flex justify-content-center align-items-center" action="">
         {% csrf_token %}
     <select class ="form-control" style="width: 200px" name="selectedcountry">
     {% for country in mylist %}
@@ -34,22 +34,22 @@
    
     <div class="d-flex justify-content-center align-items-center">
         <div class="container" style="background-color: orange;height: 100px;width:205px">
-            <h1 style="text-align: center;">{{total}}</h1>
-            <p style="text-align: center;">total</p>
+            <h1 style="text-align: center;color: white">{{total}}</h1>
+            <p style="text-align: center;color: white">total</p>
         </div>
       <div class="container" style="background-color: green;height: 100px;width:200px">
             <h1 style="text-align: center;color: white">{{recovered}}</h1>
             <p style="text-align: center;color: white">recovered</p>
         </div>
           <div class="container" style="background-color: yellow;height: 100px;width:200px">
-            <h1 style="text-align: center;">{{active}}</h1>
-            <p style="text-align: center;">active</p>
+            <h1 style="text-align: center;color: white">{{active}}</h1>
+            <p style="text-align: center;color: white">active</p>
         </div>
     </div>
     <div class="d-flex justify-content-center align-items-center">
     <div class="container" style="background-color:skyblue ;height: 100px;width:200px">
-            <h1 style="text-align: center;">{{new}}</h1>
-            <p style="text-align: center;">new</p>
+            <h1 style="text-align: center;color: white">{{new}}</h1>
+            <p style="text-align: center;color: white">new</p>
         </div>
         <div class="container" style="background-color: grey;height: 100px;width:200px">
             <h1 style="text-align: center;color: white">{{deaths}}</h1>
